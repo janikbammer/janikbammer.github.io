@@ -64,8 +64,13 @@ section{padding:110px 0}
 .about p{margin-top:8px;opacity:.85;font-size:18px}
 .sign{margin-top:26px;font-family:'Syne',serif;font-size:24px;font-style:italic}
 /* services */
-.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:52px}
-.svc{background:var(--bg);border-radius:var(--r);overflow:hidden;transition:transform .3s}
+.svc-grid{display:grid;grid-template-columns:repeat(var(--cols),1fr);gap:22px;margin-top:52px}
+.n3{--cols:3}.n4{--cols:4}.n5{--cols:6}
+.n5 .svc{grid-column:span 2}
+.n5 .svc:nth-child(n+4){grid-column:span 3}
+.n5 .svc:nth-child(n+4) .svc-img{aspect-ratio:16/8}
+.svc h3{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+.svc{background:var(--bg);border-radius:var(--r);overflow:hidden;transition:transform .3s;min-width:0}
 .svc:hover{transform:translateY(-4px)}
 .svc-img{aspect-ratio:4/3;overflow:hidden}
 .svc-img img{transition:transform .6s}.svc:hover .svc-img img{transform:scale(1.06)}
@@ -115,6 +120,11 @@ footer a{text-decoration:none}
  .about,.contact{grid-template-columns:1fr;gap:44px}
  .badge{right:12px}
  .steps{grid-template-columns:1fr}
+ .n3,.n4,.n5{--cols:2}
+ .n5 .svc,.n5 .svc:nth-child(n+4){grid-column:auto}
+ .n5 .svc:nth-child(n+4) .svc-img{aspect-ratio:4/3}
+ .n5 .svc:last-child,.n3 .svc:last-child{grid-column:1/-1}
+ .n5 .svc:last-child .svc-img,.n3 .svc:last-child .svc-img{aspect-ratio:16/7}
  .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
  .gallery .g3{grid-row:span 1}
  section{padding:76px 0}
@@ -145,7 +155,9 @@ footer a{text-decoration:none}
  .about{gap:32px}
  .about-img .frame{border-radius:160px 160px var(--r) var(--r)}
  .badge{right:10px;bottom:20px;padding:12px 16px}
- .svc-grid{gap:16px;margin-top:36px}
+ .svc-grid{gap:16px;margin-top:36px;--cols:1!important}
+ .svc-grid .svc,.svc-grid .svc:last-child{grid-column:auto!important}
+ .svc-grid .svc .svc-img{aspect-ratio:4/3!important}
  .svc-body{padding:20px 22px 24px}
  .svc h3{font-size:22px}
  .steps{gap:22px;margin-top:36px}
@@ -209,7 +221,7 @@ footer a{text-decoration:none}
    <span class="eyebrow">Leistungen</span>
    <h2>Was ich für Sie mache</h2>
    <p class="lead">Jede Behandlung passe ich an Sie an. Preise und Details gerne auf Anfrage, ein Anruf genügt.</p>
-   <div class="svc-grid"><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1604654894611-6973b376cbde?auto=format&fit=crop&w=800&q=80&h=600" alt="Gel-Modellage"></div><div class="svc-body"><span class="num">01</span><h3>Gel-Modellage</h3><p>Stabil, natürlich wirkend und langlebig.</p></div></article><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1772322586702-73125782bd99?auto=format&fit=crop&w=800&q=80&h=600" alt="Refill"></div><div class="svc-body"><span class="num">02</span><h3>Refill</h3><p>Auffüllen alle 3–4 Wochen.</p></div></article><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1772322586785-3a34772cbc61?auto=format&fit=crop&w=800&q=80&h=600" alt="Nail Art"></div><div class="svc-body"><span class="num">03</span><h3>Nail Art</h3><p>Muster, Farben, Trends, ganz wie du magst.</p></div></article><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1610992015836-7c249d75782d?auto=format&fit=crop&w=800&q=80&h=600" alt="Maniküre"></div><div class="svc-body"><span class="num">04</span><h3>Maniküre</h3><p>Pflege für Hände und Nagelhaut.</p></div></article></div>
+   <div class="svc-grid n4"><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1604654894611-6973b376cbde?auto=format&fit=crop&w=800&q=80&h=600" alt="Gel-Modellage"></div><div class="svc-body"><span class="num">01</span><h3>Gel-Modellage</h3><p>Stabil, natürlich wirkend und langlebig.</p></div></article><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1772322586702-73125782bd99?auto=format&fit=crop&w=800&q=80&h=600" alt="Refill"></div><div class="svc-body"><span class="num">02</span><h3>Refill</h3><p>Auffüllen alle 3–4 Wochen.</p></div></article><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1772322586785-3a34772cbc61?auto=format&fit=crop&w=800&q=80&h=600" alt="Nail Art"></div><div class="svc-body"><span class="num">03</span><h3>Nail Art</h3><p>Muster, Farben, Trends, ganz wie du magst.</p></div></article><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1610992015836-7c249d75782d?auto=format&fit=crop&w=800&q=80&h=600" alt="Maniküre"></div><div class="svc-body"><span class="num">04</span><h3>Maniküre</h3><p>Pflege für Hände und Nagelhaut.</p></div></article></div>
   </div>
  </section>
 
