@@ -4,125 +4,230 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ganz Schön Gsund | Fußpflege &amp; Nagelpflege in Michaelnbach</title>
-<meta name="description" content="Ganz Schön Gsund: Fußpflege &amp; Nagelpflege in Michaelnbach. Ganzheitliche Fußgesundheit, die man spürt.">
+<meta name="description" content="Ganz Schön Gsund: Fußpflege &amp; Nagelpflege in Michaelnbach. Fußpflege mit Feingefühl, Fachwissen und einem ganzheitlichen Blick auf Ihr Wohlbefinden, in Michaelnbach.">
+<meta property="og:title" content="Ganz Schön Gsund | Fußpflege &amp; Nagelpflege in Michaelnbach">
+<meta property="og:description" content="Fußpflege mit Feingefühl, Fachwissen und einem ganzheitlichen Blick auf Ihr Wohlbefinden, in Michaelnbach.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1675159364615-38e1f6b62282?auto=format&fit=crop&w=1800&q=80">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f4f1ea;--ink:#24322b;--acc:#5f7d63;--soft:#e3e9dd;--accink:#ffffff}
+:root{--bg:#f5f2eb;--ink:#22302a;--acc:#5f7d63;--soft:#e6ebdf;--accink:#ffffff;--r:22px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
 a{color:inherit}
-h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-.draft{background:var(--ink);color:var(--bg);font-size:13px;text-align:center;padding:8px 16px;opacity:.92}
-nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
-.logo{display:flex;align-items:center;gap:12px;font-family:'Fraunces',serif;font-size:20px;font-weight:600;text-decoration:none}
-.mark{width:40px;height:40px;border-radius:50%;background:var(--acc);color:var(--accink);display:grid;place-items:center;font-size:20px}
-.navlinks{display:flex;gap:28px;font-size:15px}
-.navlinks a{text-decoration:none;opacity:.75}.navlinks a:hover{opacity:1}
-.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center;padding-top:64px;padding-bottom:96px}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:13px;font-weight:600;color:var(--acc);margin-bottom:18px}
-.hero h1{font-size:clamp(40px,6vw,68px);margin-bottom:22px}
-.hero p{font-size:19px;opacity:.85;max-width:34em;margin-bottom:34px}
-.btns{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;background:var(--acc);color:var(--accink);text-decoration:none;font-weight:600;padding:15px 26px;border-radius:999px;transition:transform .15s}
-.btn:hover{transform:translateY(-2px)}
-.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid currentColor}
-.art{aspect-ratio:4/5;border-radius:220px 220px 24px 24px;background:radial-gradient(circle at 30% 25%,var(--soft),transparent 60%),linear-gradient(160deg,var(--acc),var(--soft));position:relative;overflow:hidden}
-.art::after{content:"G";position:absolute;inset:0;display:grid;place-items:center;font-family:'Fraunces',serif;font-size:220px;color:var(--bg);opacity:.35}
-section{padding:88px 0}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:.16em;font-size:12.5px;font-weight:600;color:var(--acc);margin-bottom:16px}
+h2{font-size:clamp(34px,4.4vw,54px);margin-bottom:16px}
+.lead{font-size:18.5px;opacity:.8;max-width:38em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--acc);color:var(--accink);text-decoration:none;font-weight:600;padding:15px 28px;border-radius:999px;transition:transform .2s,box-shadow .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -10px var(--acc)}
+.btn.ghost{background:transparent;color:inherit;border:1.5px solid currentColor}
+.btn.light{background:#fff;color:#1b1b1b}
+/* draft */
+.draft{background:var(--ink);color:var(--bg);font-size:12.5px;text-align:center;padding:7px 16px}
+/* header */
+header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
+nav{display:flex;justify-content:space-between;align-items:center;height:72px}
+.logo{display:flex;align-items:center;gap:12px;font-family:'Fraunces',serif;font-size:21px;font-weight:600;text-decoration:none}
+.mark{width:38px;height:38px;border-radius:50%;background:var(--acc);color:var(--accink);display:grid;place-items:center;font-size:18px}
+.navlinks{display:flex;gap:30px;align-items:center;font-size:15px}
+.navlinks a:not(.btn){text-decoration:none;opacity:.75}.navlinks a:not(.btn):hover{opacity:1}
+.navlinks .btn{padding:11px 20px;font-size:14.5px}
+/* hero */
+.hero{position:relative;min-height:min(86vh,780px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero>img{position:absolute;inset:0;transform:scale(1.04);animation:zoom 14s ease-out forwards}
+@keyframes zoom{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08) 0%,rgba(0,0,0,.25) 45%,rgba(0,0,0,.72) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:72px;width:100%}
+.hero .eyebrow{color:#fff;opacity:.9}
+.hero h1{font-size:clamp(44px,7vw,88px);max-width:13ch;margin-bottom:20px}
+.hero p{font-size:clamp(17px,1.6vw,20px);max-width:36em;opacity:.92;margin-bottom:32px}
+.hero .btns{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn.ghost{color:#fff}
+/* facts */
+.facts{background:var(--acc);color:var(--accink)}
+.facts ul{list-style:none;display:flex;justify-content:space-around;gap:20px;flex-wrap:wrap;padding:20px 0;font-weight:500}
+.facts li::before{content:"✦";margin-right:10px;opacity:.7}
+section{padding:110px 0}
 .alt{background:var(--soft)}
-h2{font-size:clamp(32px,4vw,46px);margin-bottom:14px}
-.lead{opacity:.8;max-width:36em;margin-bottom:48px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-.svc{background:var(--bg);border-radius:20px;padding:28px}
-.num{font-size:13px;font-weight:600;color:var(--acc);letter-spacing:.1em}
-.svc h3{font-size:24px;margin:14px 0 8px}
-.svc p{opacity:.8;font-size:16px}
-.about{display:grid;grid-template-columns:1fr 1.3fr;gap:56px;align-items:center}
-.quote{font-family:'Fraunces',serif;font-size:clamp(26px,3vw,36px);line-height:1.25}
-.extra{margin-top:18px;opacity:.85}
-.contact{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
-.card{background:var(--soft);border-radius:24px;padding:36px}
-.card h3,.hours h3{font-size:24px;margin-bottom:16px}
-.line{display:block;font-size:19px;margin-bottom:10px;text-decoration:none}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1.05fr;gap:72px;align-items:center}
+.about-img{position:relative}
+.about-img .frame{aspect-ratio:4/5;border-radius:200px 200px var(--r) var(--r);overflow:hidden}
+.badge{position:absolute;right:-18px;bottom:36px;background:var(--bg);color:var(--ink);border-radius:18px;padding:18px 22px;box-shadow:0 20px 40px -18px rgba(0,0,0,.35);font-size:14px;max-width:220px}
+.badge b{display:block;font-family:'Fraunces',serif;font-size:22px;color:var(--acc)}
+.about p{margin-top:8px;opacity:.85;font-size:18px}
+.sign{margin-top:26px;font-family:'Fraunces',serif;font-size:24px;font-style:italic}
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:52px}
+.svc{background:var(--bg);border-radius:var(--r);overflow:hidden;transition:transform .3s}
+.svc:hover{transform:translateY(-4px)}
+.svc-img{aspect-ratio:4/3;overflow:hidden}
+.svc-img img{transition:transform .6s}.svc:hover .svc-img img{transform:scale(1.06)}
+.svc-body{padding:24px 26px 28px}
+.num{font-size:12.5px;font-weight:600;color:var(--acc);letter-spacing:.12em}
+.svc h3{font-size:25px;margin:8px 0 8px}
+.svc p{opacity:.78;font-size:16px}
+.note{margin-top:28px;font-size:15px;opacity:.7}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:52px;counter-reset:s}
+.step{border-top:1.5px solid color-mix(in srgb,var(--ink) 20%,transparent);padding-top:26px}
+.stepn{font-family:'Fraunces',serif;font-size:54px;color:var(--acc);line-height:1}
+.step h3{font-size:24px;margin:14px 0 8px}
+.step p{opacity:.78}
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px;margin-top:48px}
+.gallery figure{border-radius:16px;overflow:hidden}
+.gallery .g0{grid-column:span 2;grid-row:span 2}
+.gallery .g3{grid-row:span 2}
+.gallery img{transition:transform .6s}.gallery figure:hover img{transform:scale(1.05)}
+/* band */
+.band{position:relative;color:#fff;text-align:center;padding:130px 0;overflow:hidden}
+.band>img{position:absolute;inset:0}
+.band::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.55)}
+.band .wrap{position:relative;z-index:2}
+.band h2{max-width:16ch;margin:0 auto 18px}
+.band p{opacity:.9;margin-bottom:30px;font-size:18px}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:48px}
+.card{background:var(--bg);border-radius:var(--r);padding:36px}
+.card h3{font-size:26px;margin-bottom:20px}
+.line{display:flex;flex-direction:column;text-decoration:none;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent);font-size:18px}
+.line span,.hrow span:first-child{font-size:12.5px;text-transform:uppercase;letter-spacing:.12em;opacity:.6}
 .line:hover{color:var(--acc)}
-.hours{background:var(--soft);border-radius:24px;padding:36px}
-.hrow{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 15%,transparent)}
-footer{padding:40px 0;font-size:14px;opacity:.65;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.hrow{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.hrow span:first-child{opacity:1;font-size:16px;text-transform:none;letter-spacing:0}
+.map{border-radius:var(--r);overflow:hidden;margin-top:28px;height:360px;background:var(--soft)}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3)}
+footer{padding:44px 0 50px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;opacity:.7}
+footer a{text-decoration:none}
 .mobilebar{display:none}
-@media(max-width:820px){
- .navlinks{display:none}
- .hero,.about,.contact{grid-template-columns:1fr;gap:36px}
- .hero{padding-top:24px;padding-bottom:64px}
- .art{max-width:340px;width:100%;margin:0 auto}
- section{padding:64px 0}
- .mobilebar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;gap:8px;z-index:10}
- .mobilebar a{flex:1;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.18)}
- .mobilebar .ghost{background:var(--bg)}
- body{padding-bottom:84px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:900px){
+ .navlinks a:not(.btn){display:none}
+ .about,.contact{grid-template-columns:1fr;gap:44px}
+ .badge{right:12px}
+ .steps{grid-template-columns:1fr}
+ .gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
+ .gallery .g3{grid-row:span 1}
+ section{padding:76px 0}
+ .hero{min-height:88vh}
+ .hero .wrap{padding-bottom:110px}
+ .mobilebar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;gap:8px;z-index:60}
+ .mobilebar a{flex:1;box-shadow:0 10px 30px -8px rgba(0,0,0,.35)}
+ .mobilebar .ghost{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+ body{padding-bottom:80px}
 }
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.hero>img{animation:none}}
 </style>
 </head>
 <body>
-<div class="draft">Entwurf von Janik Bammer für Ganz Schön Gsund · noch nicht veröffentlicht</div>
-<header class="wrap">
- <nav>
-  <a class="logo" href="#"><span class="mark">G</span>Ganz Schön Gsund</a>
-  <div class="navlinks"><a href="#leistungen">Leistungen</a><a href="#ueber">Über mich</a><a href="#kontakt">Kontakt</a></div>
- </nav>
+<div class="draft">Entwurf von Janik Bammer für Ganz Schön Gsund · Bilder sind Beispielbilder</div>
+<header>
+ <div class="wrap">
+  <nav>
+   <a class="logo" href="#top"><span class="mark">G</span>Ganz Schön Gsund</a>
+   <div class="navlinks"><a href="#ueber">Über mich</a><a href="#leistungen">Leistungen</a><a href="#galerie">Galerie</a><a href="#kontakt">Kontakt</a><a class="btn" href="tel:+436506227445">Termin vereinbaren</a></div>
+  </nav>
+ </div>
 </header>
-<main>
- <div class="wrap hero">
-  <div>
-   <div class="eyebrow">Fußpflege &amp; Nagelpflege · Michaelnbach</div>
+
+<main id="top">
+ <div class="hero">
+  <img src="https://images.unsplash.com/photo-1675159364615-38e1f6b62282?auto=format&fit=crop&w=1800&q=80" alt="Fußpflege &amp; Nagelpflege in Michaelnbach">
+  <div class="wrap">
+   <span class="eyebrow">Fußpflege &amp; Nagelpflege · Michaelnbach</span>
    <h1>Ganzheitliche Fußgesundheit, die man spürt.</h1>
-   <p>Gesunde Füße tragen uns durchs Leben. Bei Ganz Schön Gsund bekommen sie die Aufmerksamkeit, die sie verdienen: mit Feingefühl, Fachwissen und einem ganzheitlichen Blick auf Ihr Wohlbefinden.</p>
-   <div class="btns"><a class="btn" href="tel:+436506227445">Termin vereinbaren</a><a class="btn ghost" href="https://wa.me/436506227445">WhatsApp</a></div>
+   <p>Fußpflege mit Feingefühl, Fachwissen und einem ganzheitlichen Blick auf Ihr Wohlbefinden, in Michaelnbach.</p>
+   <div class="btns"><a class="btn" href="tel:+436506227445">Termin vereinbaren</a><a class="btn ghost" href="#leistungen">Leistungen ansehen</a></div>
   </div>
-  <div class="art" aria-hidden="true"></div>
  </div>
 
- <section id="leistungen" class="alt">
-  <div class="wrap">
-   <div class="eyebrow">Leistungen</div>
-   <h2>Was ich für Sie mache</h2>
-   <p class="lead">Preise und Details gerne auf Anfrage, ein Anruf genügt.</p>
-   <div class="grid"><article class="svc"><span class="num">01</span><h3>Fußpflege</h3><p>Mit podologischem Arbeiten, für ein spürbar besseres Gefühl beim Gehen.</p></article><article class="svc"><span class="num">02</span><h3>Nagelpflege</h3><p>Stärkung und Pflege der natürlichen Nägel.</p></article><article class="svc"><span class="num">03</span><h3>Fuß- &amp; Zehendiagnostik</h3><p>Genau hinschauen, bevor behandelt wird.</p></article><article class="svc"><span class="num">04</span><h3>Fußreflexzonenarbeit</h3><p>Entspannung, die über die Füße hinaus wirkt.</p></article><article class="svc"><span class="num">05</span><h3>Aloe-Vera-Pflege</h3><p>Behandlungen mit Pflegeprodukten von Forever Living.</p></article></div>
-  </div>
- </section>
+ <div class="facts"><div class="wrap"><ul><li>Podologisches Arbeiten</li><li>Ganzheitlicher Ansatz</li><li>Persönliche Betreuung</li></ul></div></div>
 
  <section id="ueber">
   <div class="wrap about">
-   <div class="eyebrow" style="margin:0">Über mich</div>
-   <div>
-    <p class="quote">Persönlich, mit Erfahrung und mit Zeit für Sie.</p>
-    <p class="extra">Simone Oberauer</p>
-    <p class='extra'>Seit August 2025 unterstützt mich eine engagierte Mitarbeiterin, so haben wir mehr Zeit für Sie.</p>
+   <div class="about-img reveal">
+    <div class="frame"><img loading="lazy" src="https://images.unsplash.com/photo-1760722974657-f64bce2f9cc5?auto=format&fit=crop&w=1000&q=80&h=1250" alt="Ganz Schön Gsund"></div>
+    <div class="badge"><b>Michaelnbach</b>Fußpflege &amp; Nagelpflege</div>
+   </div>
+   <div class="reveal">
+    <span class="eyebrow">Über mich</span>
+    <h2>Gesunde Füße tragen uns durchs Leben.</h2>
+    <p>Deshalb verdienen sie nicht nur Aufmerksamkeit, sondern echte, bewusste Pflege. Unter dem Namen „Ganz Schön Gsund“ begleite ich meine Kundinnen und Kunden mit viel Feingefühl und bilde mich laufend weiter. Seit August 2025 unterstützt mich eine engagierte Mitarbeiterin, so bleibt noch mehr Zeit für Sie.</p>
+    <p class="sign">Simone Oberauer</p>
    </div>
   </div>
  </section>
 
- <section id="kontakt" class="alt">
+ <section id="leistungen" class="alt">
   <div class="wrap">
-   <div class="eyebrow">Kontakt</div>
-   <h2>Termin vereinbaren</h2>
-   <p class="lead">Rufen Sie einfach an, ich freue mich auf Sie.</p>
+   <span class="eyebrow">Leistungen</span>
+   <h2>Was ich für Sie mache</h2>
+   <p class="lead">Jede Behandlung passe ich an Sie an. Preise und Details gerne auf Anfrage, ein Anruf genügt.</p>
+   <div class="svc-grid"><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1768508236664-3f294aaf7d41?auto=format&fit=crop&w=800&q=80&h=600" alt="Fußpflege"></div><div class="svc-body"><span class="num">01</span><h3>Fußpflege</h3><p>Mit podologischem Arbeiten, für ein spürbar besseres Gefühl beim Gehen.</p></div></article><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1519419451778-14599a49ec41?auto=format&fit=crop&w=800&q=80&h=600" alt="Nagelpflege"></div><div class="svc-body"><span class="num">02</span><h3>Nagelpflege</h3><p>Stärkung und Pflege der natürlichen Nägel.</p></div></article><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1787651344170-c2f81514934d?auto=format&fit=crop&w=800&q=80&h=600" alt="Fuß- &amp; Zehendiagnostik"></div><div class="svc-body"><span class="num">03</span><h3>Fuß- &amp; Zehendiagnostik</h3><p>Genau hinschauen, bevor behandelt wird.</p></div></article><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1675159364615-38e1f6b62282?auto=format&fit=crop&w=800&q=80&h=600" alt="Fußreflexzonenarbeit"></div><div class="svc-body"><span class="num">04</span><h3>Fußreflexzonenarbeit</h3><p>Entspannung, die über die Füße hinaus wirkt.</p></div></article><article class="svc reveal"><div class="svc-img"><img loading="lazy" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80&h=600" alt="Aloe-Vera-Pflege"></div><div class="svc-body"><span class="num">05</span><h3>Aloe-Vera-Pflege</h3><p>Behandlungen mit Pflegeprodukten von Forever Living.</p></div></article></div>
+  </div>
+ </section>
+
+ <section>
+  <div class="wrap">
+   <span class="eyebrow">So einfach geht's</span>
+   <h2>In drei Schritten zum Termin</h2>
+   <div class="steps"><div class="step reveal"><span class="stepn">1</span><h3>Anrufen oder schreiben</h3><p>Wir vereinbaren gemeinsam einen Termin, der Ihnen passt.</p></div><div class="step reveal"><span class="stepn">2</span><h3>Behandlung</h3><p>Ich nehme mir Zeit, schaue genau hin und behandle sanft und gründlich.</p></div><div class="step reveal"><span class="stepn">3</span><h3>Wohlfühlen</h3><p>Sie gehen mit gepflegten, leichten Füßen nach Hause.</p></div></div>
+  </div>
+ </section>
+
+ <section id="galerie" class="alt">
+  <div class="wrap">
+   <span class="eyebrow">Galerie</span>
+   <h2>Einblicke</h2>
+   <p class="lead">Hier kommen später Ihre eigenen Fotos hinein.</p>
+   <div class="gallery"><figure class="g0"><img loading="lazy" src="https://images.unsplash.com/photo-1768508236664-3f294aaf7d41?auto=format&fit=crop&w=900&q=80&h=900" alt="Beispielbild"></figure><figure class="g1"><img loading="lazy" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=80&h=900" alt="Beispielbild"></figure><figure class="g2"><img loading="lazy" src="https://images.unsplash.com/photo-1621468644467-37e6df96e446?auto=format&fit=crop&w=900&q=80&h=900" alt="Beispielbild"></figure><figure class="g3"><img loading="lazy" src="https://images.unsplash.com/photo-1787651344170-c2f81514934d?auto=format&fit=crop&w=900&q=80&h=900" alt="Beispielbild"></figure><figure class="g4"><img loading="lazy" src="https://images.unsplash.com/photo-1760722974657-f64bce2f9cc5?auto=format&fit=crop&w=900&q=80&h=900" alt="Beispielbild"></figure><figure class="g5"><img loading="lazy" src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=900&q=80&h=900" alt="Beispielbild"></figure></div>
+  </div>
+ </section>
+
+ <div class="band">
+  <img loading="lazy" src="https://images.unsplash.com/photo-1638859460750-181fcc7936a6?auto=format&fit=crop&w=1800&q=80" alt="">
+  <div class="wrap">
+   <h2>Gönnen Sie sich etwas Gutes.</h2>
+   <p>Rufen Sie einfach an, ich finde einen Termin für Sie.</p>
+   <a class="btn light" href="tel:+436506227445">Termin vereinbaren</a>
+  </div>
+ </div>
+
+ <section id="kontakt">
+  <div class="wrap">
+   <span class="eyebrow">Kontakt</span>
+   <h2>Ich freue mich auf Sie</h2>
    <div class="contact">
-    <div class="card" style="background:var(--bg)">
+    <div class="card alt" style="background:var(--soft)">
      <h3>Ganz Schön Gsund</h3>
-     <a class="line" href="tel:+436506227445">☎ 0650 6227445</a>
-     <a class="line" href="https://www.google.com/maps/search/?api=1&query=Oberspaching+8,+4712+Michaelnbach" target="_blank" rel="noopener">⌖ Oberspaching 8, 4712 Michaelnbach</a>
-     <a class="line" href="mailto:fusspflege.simone@gmail.com">✉ fusspflege.simone@gmail.com</a>
+     <a class="line" href="tel:+436506227445"><span>Telefon</span>0650 6227445</a>
+     <a class="line" href="https://wa.me/436506227445"><span>WhatsApp</span>Nachricht schreiben</a>
+     <a class="line" href="mailto:fusspflege.simone@gmail.com"><span>E-Mail</span>fusspflege.simone@gmail.com</a>
+     <a class="line" href="https://www.google.com/maps/search/?api=1&query=Oberspaching+8,+4712+Michaelnbach" target="_blank" rel="noopener"><span>Adresse</span>Oberspaching 8, 4712 Michaelnbach</a>
     </div>
-    <div class='hours'><h3>Termine</h3><p>Nach telefonischer Vereinbarung.</p></div>
+    <div class="card" style="background:var(--soft)">
+     <h3>Öffnungszeiten</h3>
+     <div class='hrow'><span>Termine</span><span>nach Vereinbarung</span></div><div class='hrow'><span>Telefon</span><span>0650 6227445</span></div>
+    </div>
    </div>
+   <div class="map"><iframe loading="lazy" title="Karte" src="https://maps.google.com/maps?q=Oberspaching+8,+4712+Michaelnbach&z=14&output=embed"></iframe></div>
   </div>
  </section>
 </main>
-<footer class="wrap"><span>© Ganz Schön Gsund · Oberspaching 8, 4712 Michaelnbach</span><span>Website-Entwurf: Janik Bammer</span></footer>
-<div class="mobilebar"><a class="btn" href="tel:+436506227445">Anrufen</a><a class="btn ghost" href="https://wa.me/436506227445">WhatsApp</a></div>
+
+<footer><div class="wrap"><span>© Ganz Schön Gsund · Oberspaching 8, 4712 Michaelnbach</span><span><a href="#top">Impressum</a> · <a href="#top">Datenschutz</a> · Website: Janik Bammer</span></div></footer>
+<div class="mobilebar"><a class="btn" href="tel:+436506227445">Termin vereinbaren</a></div>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 </body>
 </html>
