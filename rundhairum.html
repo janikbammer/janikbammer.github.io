@@ -55,6 +55,24 @@ h2{font-size:clamp(32px,4vw,46px);margin-bottom:14px}
 .hours{background:var(--bg);border-radius:24px;padding:36px}
 .hrow{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 15%,transparent)}
 .hnote{opacity:.85}
+.art.photo{background:var(--soft)}
+.art.photo::after{content:none}
+.art.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.tag{position:absolute;left:14px;bottom:14px;background:rgba(0,0,0,.55);color:#fff;font-size:12px;padding:4px 10px;border-radius:999px}
+.highlights{list-style:none;display:flex;flex-wrap:wrap;gap:10px 28px;margin:-56px 0 72px;padding:22px 28px;border-radius:20px;background:var(--soft)}
+.highlights li{display:flex;align-items:center;gap:10px;font-weight:500;font-size:16px}
+.highlights li::before{content:"✓";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--acc);color:var(--accink);font-size:13px;font-weight:700}
+.photoslot{aspect-ratio:4/5;max-width:380px;width:100%;border:2px dashed color-mix(in srgb,var(--acc) 60%,transparent);border-radius:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;padding:28px;background:color-mix(in srgb,var(--soft) 55%,transparent)}
+.photoslot .cam{font-size:40px}
+.photoslot strong{font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:600}
+.photoslot span{opacity:.75;font-size:15px;max-width:22em}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:56px}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px;display:block}
+#stimmen{padding-top:0}
+.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.rev{background:var(--soft);border-radius:20px;padding:28px;margin:0;display:flex;flex-direction:column;gap:12px}
+.rev blockquote{font-family:'Cormorant Garamond',Georgia,serif;font-size:21px;line-height:1.35;}
+.rev figcaption{font-size:13px;opacity:.65;margin-top:auto}
 footer{padding:40px 0;font-size:14px;opacity:.65;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .mobilebar{display:none}
 @media(max-width:820px){
@@ -62,6 +80,9 @@ footer{padding:40px 0;font-size:14px;opacity:.65;display:flex;justify-content:sp
  .hero,.about,.contact{grid-template-columns:1fr;gap:36px}
  .hero{padding-top:24px;padding-bottom:64px}
  .art{max-width:340px;width:100%;margin:0 auto}
+ .highlights{margin:-24px 0 48px;flex-direction:column}
+ .photoslot{margin:0 auto}
+ .gallery{grid-template-columns:1fr;margin-top:36px}
  section{padding:64px 0}
  .hrow{flex-direction:column;gap:2px}
  .mobilebar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;gap:8px;z-index:10}
@@ -72,7 +93,7 @@ footer{padding:40px 0;font-size:14px;opacity:.65;display:flex;justify-content:sp
 </style>
 </head>
 <body>
-<div class="draft">Entwurf von Janik Bammer für Viktoria Rundhairum · noch nicht veröffentlicht</div>
+<div class="draft">Entwurf von Janik Bammer für Viktoria Rundhairum · noch nicht veröffentlicht · Fotos sind Beispiele</div>
 <header class="wrap">
  <nav>
   <a class="logo" href="#"><span class="mark">V</span>Viktoria Rundhairum</a>
@@ -83,30 +104,42 @@ footer{padding:40px 0;font-size:14px;opacity:.65;display:flex;justify-content:sp
  <div class="wrap hero">
   <div>
    <div class="eyebrow">Friseur · Arnreit</div>
-   <h1>Ihr Friseur in Arnreit.</h1>
-   <p>Schneiden, färben, frisieren: persönlich und mit Erfahrung. Bei Rundhairum nehme ich mir Zeit für Ihre Haare. Um Terminvereinbarung wird gebeten.</p>
-   
+   <h1>Ein kleiner Salon mit großem Service.</h1>
+   <p>Rundhairum in Daim bei Arnreit: Schnitt, Styling, Föhnen und auch der Bart wird gemacht. Freundlich, gut gelaunt und mit ehrlicher Beratung.</p>
+   <p class="rating"><span class="stars">★★★★★</span> 5,0 von 5 · 5 Google-Bewertungen</p>
    <div class="btns"><a class="btn" href="tel:+43728284675">Termin vereinbaren</a></div>
   </div>
-  <div class="art" aria-hidden="true"></div>
+  <div class="art photo"><img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&fit=crop&w=900&q=75&h=1125" alt="" loading="eager"><span class="tag">Beispielfoto</span></div>
  </div>
+ <div class="wrap"><ul class="highlights"><li>Auch Bart schneiden</li><li>Persönlich &amp; familiär</li></ul></div>
 
  <section id="leistungen" class="alt">
   <div class="wrap">
    <div class="eyebrow">Leistungen</div>
    <h2>Was ich für Sie mache</h2>
    <p class="lead">Preise und Details gerne auf Anfrage.</p>
-   <div class="grid"><article class="svc"><span class="num">01</span><h3>Damen</h3><p>Schnitt, Föhnen, Styling.</p></article><article class="svc"><span class="num">02</span><h3>Herren &amp; Kinder</h3><p>Der saubere Schnitt für die ganze Familie.</p></article><article class="svc"><span class="num">03</span><h3>Farbe</h3><p>Färben, Strähnen, Tönungen.</p></article><article class="svc"><span class="num">04</span><h3>Festfrisuren</h3><p>Für Hochzeit, Firmung und besondere Anlässe.</p></article></div>
+   <div class="grid"><article class="svc"><span class="num">01</span><h3>Damen</h3><p>Schnitt, Föhnen, Styling.</p></article><article class="svc"><span class="num">02</span><h3>Herren &amp; Bart</h3><p>Haarschnitt und Bart schneiden.</p></article><article class="svc"><span class="num">03</span><h3>Farbe</h3><p>Färben, Strähnen, Tönungen.</p></article><article class="svc"><span class="num">04</span><h3>Kinder</h3><p>Der erste Haarschnitt und alle danach.</p></article></div>
   </div>
  </section>
 
  <section id="ueber">
   <div class="wrap about">
-   <div class="eyebrow" style="margin:0">Über mich</div>
+   <div class="photoslot"><div class="cam">📷</div><strong>Hier kommt Ihr Foto hin</strong><span>Ein Bild von Ihnen oder Ihrem Salon. Das macht die Seite erst richtig persönlich.</span></div>
    <div>
-    <p class="quote">Persönlich, ehrlich und mit Zeit für Sie.</p>
+    <div class="eyebrow">Über mich</div>
+    <p class="quote">Gute Laune inklusive.</p>
     <p class="extra">Viktoria</p>
    </div>
+  </div>
+  <div class="wrap"><div class="gallery"><img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=75&h=600" alt="" loading="lazy"><img src="https://images.unsplash.com/photo-1734111719430-fe4a3973f8af?auto=format&fit=crop&w=800&q=75&h=600" alt="" loading="lazy"></div></div>
+ </section>
+
+ <section id="stimmen">
+  <div class="wrap">
+   <div class="eyebrow">Das sagen Ihre Kund:innen</div>
+   <h2>Echte Stimmen</h2>
+   <p class="lead">Aus den Google-Bewertungen von Viktoria Rundhairum.</p>
+   <div class="revs"><figure class="rev"><div class="stars">★★★★★</div><blockquote>„Bin schon jahrelang sehr zufrieden! Super Beratung! Super Handwerk! Freundlich und immer gut gelaunt!“</blockquote><figcaption>Google-Bewertung</figcaption></figure><figure class="rev"><div class="stars">★★★★★</div><blockquote>„Schöner kleiner Friseursalon mit Top Service.“</blockquote><figcaption>Google-Bewertung</figcaption></figure></div>
   </div>
  </section>
 
@@ -126,7 +159,7 @@ footer{padding:40px 0;font-size:14px;opacity:.65;display:flex;justify-content:sp
   </div>
  </section>
 </main>
-<footer class="wrap"><span>© Viktoria Rundhairum · Daim 7, 4122 Arnreit</span><span>Website-Entwurf: Janik Bammer</span></footer>
+<footer class="wrap"><span>© Viktoria Rundhairum · Daim 7, 4122 Arnreit</span><span>Website-Entwurf: Janik Bammer · Beispielfotos: Unsplash</span></footer>
 <div class="mobilebar"><a class="btn" href="tel:+43728284675">Anrufen</a></div>
 </body>
 </html>
